@@ -1,0 +1,48 @@
+{
+    "name": "atefeboluri/laravel-tokenize-login",
+    "description": "",
+    "keywords": ["laravel","laravel8-package","PHP","laravel8"],
+    "license": "MIT",
+    "homepage": "https://github.com/atefe93/tokenized-login",
+    "authors": [
+        {
+            "name": "Atefe Boluri",
+            "email": "atefe.boluri@yahoo.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3|7.2.*|7.3.*|7.4.*|^8.0",
+        "laravel/framework":"~5.1|6.*|7.*|8.*|9.*",
+        "imanghafoori/laravel-smart-facades": "^1.0"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "atefe93\\TowFactorAuthTest\\": "tests"
+        },
+        "classmap": ["tests/TestCase.php"]
+    },
+    "require-dev": {
+        "orchestra/testbench": "~3.0",
+        "mockery/mockery": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "atefe93\\TowFactorAuth\\": "src"
+        }
+
+    },
+    "suggest": {
+        "imanghafoori/laravel-heyman": "It allows to write expressive code to authorize, validate and authenticate.",
+        "imanghafoori/laravel-decorator": "Allows you to easily apply the decorator pattern.",
+        "imanghafoori/laravel-terminator": "Gives you opportunity to refactor your controllers.",
+        "imanghafoori/laravel-anypass": " Allows you login with any password in local environment.",
+        "imanghafoori/laravel-masterpass": "You can easily set a master password without code change."
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "atefe93\\TowFactorAuth\\TowFactorAuthServiceProvider"
+            ]
+        }
+    }
+}
